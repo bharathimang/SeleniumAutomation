@@ -15,12 +15,19 @@ public class DemoMethod {
 		c=obj.a*obj.b;
 		System.out.println(c);
 	}
+	
+	public static void div() {
+		DemoMethod obj=new DemoMethod();
+		c=obj.a/obj.b;
+		System.out.println(c);
+	}
 
 	public static void main(String[] args) {
 		
 		DemoMethod obj=new DemoMethod();
 		obj.add();  // obj - Non static methods
 		DemoMethod.multiplication(); // class - static methods
+		DemoMethod.div();
 		System.out.println(c);
 		
 
